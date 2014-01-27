@@ -42,14 +42,12 @@ openerp.web_ace_editor = function (oe) {
         },
         render_value: function() {
             if (! this.get("effective_readonly")) {
-		if (this.$editor === undefined) {
                     this.$editor = ace.edit($('#' + this.editorDivName)[0]);
                     this.$editor.setTheme("ace/theme/" + this.theme);
                     this.$editor.getSession().setMode("ace/mode/" + this.mode);
 
                     this.$textarea.css('visibility', 'hidden');
                     this.$textarea.css('display', 'none');
-                }
 
                 var show_value = oe.web.format_value(this.get('value'), this, '');
                 if (show_value === '') {
@@ -59,7 +57,6 @@ openerp.web_ace_editor = function (oe) {
                 this.$editor.getSession().setValue(show_value);
                 if (! this.auto_sized) {
                     this.auto_sized = true;
-                    this.$textarea.autosize();
                 } else {
                     this.$textarea.trigger("autosize");
                 }

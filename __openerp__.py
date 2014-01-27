@@ -9,7 +9,7 @@ OpenERP Web ACE Editor Widget.
 
 This module provides the ace editor widget for textfield.
         """,
-    'depends': ['base'],
+    'depends': ['web'],
     'auto_install': False,
     'js' : [
 	"static/lib/ace/ace.js",

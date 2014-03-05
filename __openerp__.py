@@ -1,25 +1,30 @@
+# -*- coding: utf-8 -*-
+
 {
-    'name': 'Web',
-    'category': 'Hidden',
-    'version': '1.0',
-    'description':
-        """
+    "name": 'Web',
+    "description": u"""
 OpenERP Web ACE Editor Widget.
 ==============================
 
 This module provides the ace editor widget for textfield.
         """,
-    'depends': ['web'],
-    'auto_install': False,
-    'js' : [
-	"static/lib/ace/ace.js",
-        "static/src/js/ace.js",
+    "version": "1.0",
+    "depends": [
+        'web',
     ],
-    'css' : [
+    "author": "Tuxservices - 0k.io",
+    "category": "Hidden",
+    "installable" : True,
+    "active" : True,
+    "data": [
+        'ir_ui_view_record.xml',
     ],
-    'qweb' : [
-	"static/src/xml/*.xml",
+    "qweb": [
+        'static/src/xml/*.xml',
     ],
-    'test': [
+    "js": [
+        'static/lib/ace/ace.js',
+        'static/src/js/ace.js',
     ],
 }
+

@@ -18,13 +18,10 @@ This module provides the ace editor widget for textfield.
     "active" : True,
     "data": [
         'ir_ui_view_record.xml',
+        'view.xml',
     ],
     "qweb": [
         'static/src/xml/*.xml',
-    ],
-    "js": [
-        'static/lib/ace/ace.js',
-        'static/src/js/ace.js',
     ],
 }
 

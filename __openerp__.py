@@ -11,6 +11,7 @@ This module provides the ace editor widget for textfield.
     "version": "1.0",
     "depends": [
         'web',
+        'website',
     ],
     "author": "Tuxservices - 0k.io",
     "category": "Hidden",
